@@ -1,0 +1,19 @@
+json methods
+
+We can't keep objects in file.so we convert these objects into string using JSON methond
+JSON-Javascript Object Notation
+
+
+//convert object to string
+
+
+JSON.stringify(persons)
+'[{"name":"anand","age":23},{"name":"arya","age":22}]'
+
+// convert string to object
+
+
+str = JSON.stringify(persons)
+'[{"name":"anand","age":23},{"name":"arya","age":22}]'
+JSON.parse(str)
+(2) [{…}, {…}]0: {name: 'anand', age: 23}1: {name: 'arya', age: 22}length: 2[[Prototype]]: Array(0)
