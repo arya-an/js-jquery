@@ -28,6 +28,29 @@ $(document).ready(function(){
     // 'b'
     // x.keyCode
     // 98
-    
+    // $('#test').mouseenter(function(){
+    //     alert('entered this para');
+    // });
+
+    $("input").focus(function(){
+        $(this).css("background-color","blue");
+    })
+    $("input").blur(function(){
+        $(this).css("background-color","green");
+    });
+    $('#mulevent').on({
+        mouseenter:function(){
+            $(this).css("background-color",'lightblue');
+        } ,
+        click:function(){
+            $(this).css("background-color","red");
+        },
+        mouseleave:function(){
+            $(this).css("background-color","lightgreen");
+        },
+        dblclick:function(){
+            $(this).css("background-color","grey");
+        }
+    })
    
 });
